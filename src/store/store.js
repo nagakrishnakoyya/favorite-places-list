@@ -1,4 +1,5 @@
-import {createStore} from 'redux';
+import {createStore, compose} from 'redux';
 import {favoriteReducer} from './Favorite.reducer';
 
-export const store = createStore(favoriteReducer);
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION__ || compose;
+export const store = createStore(favoriteReducer, composeEnhancers());
