@@ -1,0 +1,1 @@
+export const placesBaseUrl = "https://cors-anywhere.herokuapp.com/https://roadtrippers.herokuapp.com/api/v1";
