@@ -4,6 +4,7 @@ import {BrowserRouter, Switch, Route, Link} from 'react-router-dom';
 import PlacesView from './components/PlacesView';
 import PlaceDetails from './components/PlaceDetails';
 import FavoritePlaces from './components/FavoritePlaces';
+import PageNotFound from './components/PageNotFound';
 import {store} from './store/store';
 import {Provider} from 'react-redux';
 
@@ -39,6 +40,7 @@ const App=()=> {
           <Route path="/" exact component={PlacesView}/>
           <Route path="/placeDetails/:place_id" exact component={PlaceDetails}/>
           <Route path="/favorities" exact component={FavoritePlaces}/>
+          <Route path="/**" component={PageNotFound}/>
       </Switch>
     </BrowserRouter>
     </div>

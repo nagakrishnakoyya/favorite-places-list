@@ -30,3 +30,17 @@ ul.place_details li {
 .fa-heart.new-color {
   color: red;
 }
+.pageNotFound {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.pageNotFound p a {
+  text-decoration: none;
+}
+.pageNotFound p a:hover {
+  font-weight: bold;
+}
